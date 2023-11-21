@@ -23,3 +23,18 @@
 .mx-transactions td > div > a {
   @apply text-blue-600;
 }
+/* forcing brand colors on top of Tailwind */
+button > span {
+  background-color: black !important;
+}
+button {
+  background-color: black !important;
+}
+
+.dapp-core-component__extensionLoginButton-styles__login-text {
+  background-color: black !important;
+}
+
+.dapp-core-component__main__btn {
+  background-color: black !important;
+}

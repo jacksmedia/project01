@@ -33,7 +33,7 @@ export const Header = () => {
           {isLoggedIn ? (
             <Button
               onClick={handleLogout}
-              className='inline-block rounded-lg px-3 py-2 text-center hover:no-underline my-0 text-gray-600 hover:bg-slate-100 mx-0'
+              className='inline-block bg-black rounded-lg px-3 py-2 text-center hover:no-underline my-0 text-gray-600 hover:bg-slate-100 mx-0'
             >
               Close
             </Button>
