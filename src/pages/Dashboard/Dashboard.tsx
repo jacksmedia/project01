@@ -32,7 +32,7 @@ const WIDGETS: WidgetsType[] = [
     widget: Transactions,
     description: 'List transactions for the connected account',
     reference:
-      'https://api.elrond.com/#/accounts/AccountController_getAccountTransactions'
+      'https://api.multiversx.com/#/accounts/AccountController_getAccountTransactions'
   }
 ];
 
