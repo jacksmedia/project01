@@ -15,7 +15,7 @@ export const Transaction = () => {
     <div className='flex flex-col gap-2 text-sm'>
       <a
         href={transactionUrl}
-        className='self-start inline-block rounded-lg px-3 py-2 text-center hover:no-underline my-0 bg-transparent hover:bg-blue-600 text-blue-600 hover:text-white mr-0 border-solid border-blue-600 border-[1px]'
+        className='self-start inline-block rounded-lg px-3 py-2 text-center hover:no-underline my-0 bg-transparent hover:bg-rose-800 text-rose-800 hover:text-white mr-0 border-solid border-rose-800 border-[1px]'
       >
         Send transaction
       </a>

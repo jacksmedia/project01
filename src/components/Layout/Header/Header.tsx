@@ -27,7 +27,7 @@ export const Header = () => {
         <div className='flex justify-end container mx-auto items-center gap-2'>
           <div className='flex gap-1 items-center'>
             <div className='w-2 h-2 rounded-full bg-green-500' />
-            <p className='text-gray-600'>{environment}</p>
+            <p className='text-gray-400'>{environment}</p>
           </div>
 
           {isLoggedIn ? (

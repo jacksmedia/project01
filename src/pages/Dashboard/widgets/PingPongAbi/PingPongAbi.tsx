@@ -77,7 +77,7 @@ export const PingPongAbi = () => {
             onClick={onSendPingTransaction}
             data-testid='btnPingAbi'
             data-cy='transactionBtn'
-            className='inline-block rounded-lg px-3 py-2 text-center hover:no-underline my-0 bg-blue-600 text-white hover:bg-blue-700 mr-0 disabled:bg-gray-200 disabled:text-black disabled:cursor-not-allowed'
+            className='inline-block rounded-lg px-3 py-2 text-center hover:no-underline my-0 bg-black text-white hover:bg-rosee-800 mr-0 disabled:bg-gray-200 disabled:text-black disabled:cursor-not-allowed'
           >
             <FontAwesomeIcon icon={faArrowUp} className='mr-1' />
             Ping
@@ -88,7 +88,7 @@ export const PingPongAbi = () => {
             data-testid='btnPongAbi'
             data-cy='transactionBtn'
             onClick={onSendPongTransaction}
-            className='inline-block rounded-lg px-3 py-2 text-center hover:no-underline my-0 bg-blue-600 text-white hover:bg-blue-700 mr-0 disabled:bg-gray-200 disabled:text-black disabled:cursor-not-allowed'
+            className='inline-block rounded-lg px-3 py-2 text-center hover:no-underline my-0 bg-black text-white hover:bg-rose-800 mr-0 disabled:bg-gray-200 disabled:text-black disabled:cursor-not-allowed'
           >
             <FontAwesomeIcon icon={faArrowDown} className='mr-1' />
             Pong
