@@ -1,7 +1,20 @@
 import { AuthRedirectWrapper, PageWrapper } from 'wrappers';
 import { Transaction } from './Transaction';
+import { Button } from 'components/Button';
+import { MxLink } from 'components/MxLink';
+import { environment } from 'config';
+import { logout } from 'helpers';
+import { useGetIsLoggedIn } from 'hooks';
+import { RouteNamesEnum } from 'localConstants';
 
 export const Home = () => {
+  const isLoggedIn = useGetIsLoggedIn();
+
+  const handleLogout = () => {
+    sessionStorage.clear();
+    logout(`${window.location.origin}/unlock`, undefined, false);
+  };
+
   return (
     <AuthRedirectWrapper requireAuth={false}>
       <PageWrapper>
@@ -31,7 +44,22 @@ export const Home = () => {
                   .
                 </p>
               </div>
+              {/* dummied out for now
               <Transaction />
+              adding identical Button that appears in Header.tsx instead
+              */}
+              <div>
+                {isLoggedIn ? (
+                  <Button
+                    onClick={handleLogout}
+                    className='inline-block bg-black rounded-lg px-3 py-2 text-center hover:no-underline my-0 text-gray-600 hover:bg-slate-100 mx-0'
+                  >
+                    Close
+                  </Button>
+                ) : (
+                  <MxLink to={RouteNamesEnum.unlock}>Connect</MxLink>
+                )}
+              </div>
             </div>
           </div>
           <div className='h-4/6 bg-mvx-white bg-contain bg-no-repeat w-1/2 bg-center' />
