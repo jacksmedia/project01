@@ -13,10 +13,9 @@ export const Footer = () => {
         <a
           target='_blank'
           className='flex items-center text-sm hover:underline'
-          href='https://multiconomy.com/'
+          href='https://jacks.media/'
         >
-          Crafted with <HeartIcon className='mx-1 fill-gray-400' /> by the
-          multiconomy team
+          Crafted with <HeartIcon className='mx-1 fill-gray-400' /> by Jacks.Media
         </a>
       </div>
     </footer>
