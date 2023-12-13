@@ -22,26 +22,18 @@ export const Home = () => {
           <div className='flex items-start sm:items-center h-full sm:w-1/2 sm:bg-center'>
             <div className='flex flex-col gap-2 max-w-[70sch] text-center sm:text-left text-xl font-medium md:text-2xl lg:text-3xl'>
               <div>
-                <h1 className='font-bold'>embraly</h1>
+                <h1 className='font-bold'>Rug's Royalties</h1>
                 <p className='text-gray-400'>
-                  The wallet download dapp for{' '}
-                  <a
-                    href='https://multiversx.com/'
-                    target='_blank'
-                    className='text-gray-400 underline decoration-dotted hover:decoration-solid'
-                  >
-                    MultiversX
-                  </a>{' '}
+                  NFT Burning for the Good of All{' '}
                   <br className='hidden xl:block' />
-                  from{' '}
+                  Brought to you by{' '}
                   <a
-                    href='https://multiconomy.com/'
+                    href='https://discord.gg/projectx-dao'
                     target='_blank'
                     className='text-gray-400 underline decoration-dotted hover:decoration-solid'
                   >
-                    Multiconomy
-                  </a>{' '}
-                  .
+                    Divergent Club
+                  </a>.
                 </p>
               </div>
               {/* dummied out for now
