@@ -1,6 +1,7 @@
 {
     "routes": [
-      { "src": "/dashboard", "dest": "/index*.js" }
+      { "src": "/dashboard", "dest": "/" },
+      { "src": "/unlock", "dest": "/" }
     ]
   }
   
