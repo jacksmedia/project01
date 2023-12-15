@@ -2,12 +2,10 @@ import type {
   ExtensionLoginButtonPropsType,
   WebWalletLoginButtonPropsType,
   OperaWalletLoginButtonPropsType,
-  LedgerLoginButtonPropsType,
   WalletConnectLoginButtonPropsType
 } from '@multiversx/sdk-dapp/UI';
 import {
   ExtensionLoginButton,
-  LedgerLoginButton,
   OperaWalletLoginButton,
   WalletConnectLoginButton,
   WebWalletLoginButton,
@@ -48,7 +46,6 @@ export const Unlock = () => {
               loginButtonText='xPortal App'
               {...commonProps}
             />
-            <LedgerLoginButton loginButtonText='Ledger' {...commonProps} />
             <ExtensionLoginButton
               loginButtonText='DeFi Wallet'
               {...commonProps}
