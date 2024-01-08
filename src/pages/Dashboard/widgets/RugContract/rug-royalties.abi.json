@@ -1,0 +1,174 @@
+{
+    "buildInfo": {
+        "rustc": {
+            "version": "1.76.0-nightly",
+            "commitHash": "d86d65bbc19b928387f68427fcc3a0da498d8a19",
+            "commitDate": "2023-12-10",
+            "channel": "Nightly",
+            "short": "rustc 1.76.0-nightly (d86d65bbc 2023-12-10)"
+        },
+        "contractCrate": {
+            "name": "rug-royalties",
+            "version": "0.0.0"
+        },
+        "framework": {
+            "name": "multiversx-sc",
+            "version": "0.46.0"
+        }
+    },
+    "docs": [
+        "Rug Royalties",
+        "Only egld tokens are going to be used",
+        "Multiple NFTs from a single collections can be sent in a single call"
+    ],
+    "name": "RugRoyalties",
+    "constructor": {
+        "inputs": [],
+        "outputs": []
+    },
+    "endpoints": [
+        {
+            "name": "upgrade",
+            "mutability": "mutable",
+            "inputs": [],
+            "outputs": []
+        },
+        {
+            "name": "swap",
+            "mutability": "mutable",
+            "payableInTokens": [
+                "*"
+            ],
+            "inputs": [
+                {
+                    "name": "token",
+                    "type": "TokenIdentifier"
+                }
+            ],
+            "outputs": []
+        },
+        {
+            "name": "addCollection",
+            "onlyOwner": true,
+            "mutability": "mutable",
+            "inputs": [
+                {
+                    "name": "token",
+                    "type": "TokenIdentifier"
+                },
+                {
+                    "name": "price",
+                    "type": "BigUint"
+                }
+            ],
+            "outputs": []
+        },
+        {
+            "name": "removeCollection",
+            "onlyOwner": true,
+            "mutability": "mutable",
+            "inputs": [
+                {
+                    "name": "token",
+                    "type": "TokenIdentifier"
+                }
+            ],
+            "outputs": []
+        },
+        {
+            "name": "whitelistedCollections",
+            "mutability": "readonly",
+            "inputs": [],
+            "outputs": [
+                {
+                    "type": "variadic<TokenIdentifier>",
+                    "multi_result": true
+                }
+            ]
+        },
+        {
+            "name": "collectionDetails",
+            "mutability": "readonly",
+            "inputs": [
+                {
+                    "name": "t",
+                    "type": "TokenIdentifier"
+                }
+            ],
+            "outputs": [
+                {
+                    "type": "CollectionDetails"
+                }
+            ]
+        },
+        {
+            "name": "toggle_enabled",
+            "onlyOwner": true,
+            "mutability": "mutable",
+            "inputs": [],
+            "outputs": []
+        },
+        {
+            "name": "enabled",
+            "mutability": "readonly",
+            "inputs": [],
+            "outputs": [
+                {
+                    "type": "bool"
+                }
+            ]
+        },
+        {
+            "name": "set_holding_address",
+            "onlyOwner": true,
+            "mutability": "mutable",
+            "inputs": [
+                {
+                    "name": "address",
+                    "type": "Address"
+                }
+            ],
+            "outputs": []
+        },
+        {
+            "name": "contractDetails",
+            "mutability": "readonly",
+            "inputs": [],
+            "outputs": [
+                {
+                    "type": "ContractDetailsResponse"
+                }
+            ]
+        }
+    ],
+    "esdtAttributes": [],
+    "hasCallback": false,
+    "types": {
+        "CollectionDetails": {
+            "type": "struct",
+            "fields": [
+                {
+                    "name": "token_identifier",
+                    "type": "TokenIdentifier"
+                },
+                {
+                    "name": "price",
+                    "type": "BigUint"
+                }
+            ]
+        },
+        "ContractDetailsResponse": {
+            "type": "struct",
+            "fields": [
+                {
+                    "name": "enabled",
+                    "type": "bool"
+                },
+                {
+                    "name": "collections",
+                    "type": "List<CollectionDetails>"
+                }
+            ]
+        }
+    }
+}

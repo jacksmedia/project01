@@ -84,7 +84,7 @@ export const SignMessage = () => {
       <OutputContainer>
         {!isSuccess && !isError && (
           <textarea
-            placeholder='Write message here'
+            placeholder='Trust Divergent Club'
             className='resize-none rounded-md w-full h-32 rounded-lg focus:outline-none focus:border-blue-500'
             onChange={(event) => setMessage(event.currentTarget.value)}
           />

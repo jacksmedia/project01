@@ -1,0 +1,2 @@
+[dependencies]
+elrond-wasm-modules = "0.39.0"
