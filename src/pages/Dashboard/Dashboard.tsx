@@ -3,12 +3,10 @@ import { contractAddress } from 'config';
 import { AuthRedirectWrapper } from 'wrappers';
 import {
   Account,
-  PingPongAbi,
+  RugContract,
   SignMessage,
   NativeAuth,
   BatchTransactions,
-  PingPongRaw,
-  PingPongService,
   Transactions
 } from './widgets';
 
